@@ -9,9 +9,28 @@ height:100%;
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
-main,details{
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
   display: block;
+}
+img {
+  border:0
+}
+dfn,i,em {
+  font-style: italic;
 }
 code,
 kbd,
@@ -33,6 +52,11 @@ template,[hidden]{
 }
 small {
   font-size:80%;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
 }
 
 sub,
@@ -58,4 +82,35 @@ abbr[title] {
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,th {
+  padding: 0;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+[aria-busy='true'] {
+  cursor: progress;
+}
+
+
+[aria-controls] {
+  cursor: pointer;
 }
