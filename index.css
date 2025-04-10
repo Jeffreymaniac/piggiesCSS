@@ -24,13 +24,19 @@ menu,
 nav,
 section,
 summary {
-  display: block;
+  display: block
+}
+canvas{
+  display:inline-block
 }
 img {
   border:0
 }
 dfn,i,em {
-  font-style: italic;
+  font-style: italic
+}
+b,strong{
+font-style:bolder
 }
 code,
 kbd,
@@ -45,6 +51,16 @@ button,
 [type="submit"] {
   -webkit-appearance: button;
   cursor:pointer;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: Calibri,sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
 }
 center{text-align:center;}
 template,[hidden]{
