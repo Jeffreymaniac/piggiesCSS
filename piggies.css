@@ -80,6 +80,8 @@ pre{
 code{
 background-color:var(--pig-code-bgcolor);
 color:var(--pig-code-textcolor);
+display:block;
+height:max-content;
 }
 button,
 [type="button"],
