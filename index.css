@@ -1,7 +1,11 @@
 @charset "UTF-8";
 *,*::before,*::after{box-sizing:border-box}
 *{margin:0;padding:0;}
-
+:root {
+  --pig-bgcolor: #ff8aca;
+  --pig-textcolor: #6b034c;
+  --pig-hcolor: #1a1224;
+}
 html{
   line-height:1.15;
   -webkit-text-size-adjust:100%;
@@ -20,6 +24,8 @@ font-family:system-ui,"Helvetica Neue", Helvetica,Arial,sans-serif;
 text-rendering:auto;
 -webkit-font-smoothing:antialiased;
 -webkit-tap-highlight-color:transparent;
+background-color: var(--pig-bgcolor);
+color: var(--pig-textcolor);
 }
 p{text-wrap:pretty}
   
@@ -31,6 +37,7 @@ main,menu,
 nav,section,
 summary{display:block}
 h1,h2,h3,h4,h5,h6{
+  color: var(--pig-hcolor,var(--pig-textcolor));
   margin:0.32em 0;
   line-height:1;
   font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
