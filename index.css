@@ -11,41 +11,46 @@ body{
 font-family:system-ui,"Helvetica Neue", Helvetica,Arial,sans-serif;
 text-rendering:auto;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {display:block}
+article,aside,
+details,figcaption,
+figure,footer,
+header,hgroup,
+main,menu,
+nav,section,
+summary{display:block}
 h1,h2,h3,h4,h5,h6{
-  line-height: 1;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  word-break: break-word;
+  margin:0.32em 0;
+  line-height:1;
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight:600;
+  overflow-wrap:break-word;
+  word-wrap:break-word;
+  -ms-word-break:break-all;
+  word-break:break-word;
 }
+h1{
+  font-size:2em;
+  margin:.67em 0;
+}
+h2{font-size:1.75em}
+h3{font-size:1.5em}
+h4{font-size:1.25em}
+h5{font-size:1em}
+h6{font-size:.75em}
+
 audio,video,canvas{display:inline-block}
-img {
+img{
   border:0;
   max-width:100%;
 }
-dfn,i,em {font-style:italic}
+dfn,i,em{font-style:italic}
 b,strong{font-style:bolder}
 code,
 kbd,
 samp,
 pre{
-  font-family: 'Courier New',Courier,monospace,mono;
-  font-size: 1em;
+  font-family:'Courier New',Courier,monospace,mono;
+  font-size:1em;
 }
 
 button,
@@ -75,12 +80,11 @@ center{text-align:center}
 template,[hidden]{display:none}
 small{font-size:80%}
 
-a, pre > code{
+a,pre > code{
   background-color:transparent
 }
 
-sub,
-sup {
+sub,sup{
   font-size:75%;
   line-height:0;
   position:relative;
@@ -95,7 +99,7 @@ abbr[title]{
   text-decoration:underline dotted;
   text-rendering:optimizeLegibility;
 }
-table {
+table{
   border-collapse:collapse;
   border-spacing:0;
   border-color:inherit;
@@ -124,12 +128,12 @@ hr{
   overflow:visible;
 }
 ::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54;
+  color:inherit;
+  opacity:0.54;
 }
-audio:not([controls]) {
-  display: none;
-  height: 0;
+audio:not([controls]){
+  display:none;
+  height:0;
 }
 [aria-busy='true']{cursor:progress}
 [aria-controls]{cursor:pointer}
