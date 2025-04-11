@@ -6,11 +6,16 @@ html{
   line-height:1.15;
   -webkit-text-size-adjust:100%;
   -ms-text-size-adjust:100%;
+@media (prefers-reduced-motion: no-preference) {
+  interpolate-size:allow-keywords;
 }
 body{
 font-family:system-ui,"Helvetica Neue", Helvetica,Arial,sans-serif;
 text-rendering:auto;
+-webkit-font-smoothing:antialiased;
 }
+p{text-wrap:pretty}
+  
 article,aside,
 details,figcaption,
 figure,footer,
@@ -104,6 +109,7 @@ table{
   border-spacing:0;
   border-color:inherit;
   text-indent:0;
+  text-align:justify;
 }
 
 td,th{padding:0}
