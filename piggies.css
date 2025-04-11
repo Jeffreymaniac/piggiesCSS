@@ -31,7 +31,7 @@ color: var(--pig-textcolor);
 }
 p{
   text-wrap:pretty;
-  margin:4px;
+  margin-bottom: 2.5rem;
 }
   
 article,aside,
