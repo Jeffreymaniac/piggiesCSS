@@ -8,11 +8,18 @@ html{
   -ms-text-size-adjust:100%;
 @media (prefers-reduced-motion: no-preference) {
   interpolate-size:allow-keywords;
+  scroll-behavior:smooth;
 }
+@media (prefers-reduced-motion:reduce){
+  transition:none;
+}
+  }
+
 body{
 font-family:system-ui,"Helvetica Neue", Helvetica,Arial,sans-serif;
 text-rendering:auto;
 -webkit-font-smoothing:antialiased;
+-webkit-tap-highlight-color:transparent;
 }
 p{text-wrap:pretty}
   
@@ -43,7 +50,8 @@ h4{font-size:1.25em}
 h5{font-size:1em}
 h6{font-size:.75em}
 
-audio,video,canvas{display:inline-block}
+audio,video,canvas,output
+{display:inline-block}
 img{
   border:0;
   max-width:100%;
@@ -80,15 +88,27 @@ textarea {
   font-size:100%;
   line-height:1.15;
   margin:0;
+  border-radius:inherit;
 }
 center{text-align:center}
 template,[hidden]{display:none}
 small{font-size:80%}
 
-a,pre > code{
-  background-color:transparent
+a{
+  background-color:transparent;
+  -webkit-text-decoration-skip:objects;
 }
-
+blockquote {
+  font-family:Roboto,Arial,sans-serif;
+  font-style:italic;
+  margin:0;
+  padding:.8em;
+  padding-left:1em;
+  border-left:5px solid #1d7484;
+  margin-bottom:2.5rem;
+  background-color:#f1f1f1;
+}
+blockquote p {margin-bottom:0}
 sub,sup{
   font-size:75%;
   line-height:0;
@@ -137,6 +157,7 @@ hr{
   color:inherit;
   opacity:0.54;
 }
+::-webkit-color-swatch-wrapper{padding:0}
 audio:not([controls]){
   display:none;
   height:0;
