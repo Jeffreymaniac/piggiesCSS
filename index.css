@@ -142,7 +142,10 @@ hr {
   color: inherit;
   opacity: 0.54;
 }
-
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
 [aria-busy='true'] {
   cursor: progress;
 }
