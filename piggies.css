@@ -5,6 +5,8 @@
   --pig-bgcolor: #ff8aca;
   --pig-textcolor: #6b034c;
   --pig-hcolor: #1a1224;
+  --pig-code-bgcolor: #6b034c;
+  --pig-code-textcolor:white;
 }
 html{
   line-height:1.15;
@@ -27,7 +29,10 @@ text-rendering:auto;
 background-color: var(--pig-bgcolor);
 color: var(--pig-textcolor);
 }
-p{text-wrap:pretty}
+p{
+  text-wrap:pretty;
+  margin:4px;
+}
   
 article,aside,
 details,figcaption,
@@ -72,7 +77,10 @@ pre{
   font-family:'Courier New',Courier,monospace,mono;
   font-size:1em;
 }
-
+code{
+background-color:var(--pig-code-bgcolor);
+color:var(--pig-code-textcolor);
+}
 button,
 [type="button"],
 [type="reset"],
