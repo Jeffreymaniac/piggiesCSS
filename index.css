@@ -1,11 +1,11 @@
 @charset "UTF-8";
 *, *::before, *::after {
-    box-sizing: border-box;
+    box-sizing: border-box
   }
 
-  * {
-    margin: 0;
-    padding: 0;
+* {
+margin: 0;
+padding: 0;
   }
 body{
 font-family:system-ui,"Helvetica Neue", Helvetica,Arial,sans-serif;
@@ -35,7 +35,8 @@ audio,video,canvas{
   display:inline-block
 }
 img {
-  border:0
+  border:0;
+  max-width:100%;
 }
 dfn,i,em {
   font-style: italic
@@ -53,7 +54,10 @@ pre{
 button,
 [type="button"],
 [type="reset"],
-[type="submit"] {
+[type="submit"],
+input[type=file]::file-selector-button,
+::-webkit-file-upload-button
+{
   -webkit-appearance: button;
   cursor:pointer;
   color:inherit;
@@ -65,7 +69,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: Calibri,sans-serif;
+  font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -79,8 +83,7 @@ small {
 }
 
 a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
+  background-color: transparent
 }
 
 sub,
@@ -92,21 +95,17 @@ sup {
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -0.25em
 }
 
 sup {
-  top: -0.5em;
+  top: -0.5em
 }
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted;
   text-rendering:optimizeLegibility;
-}
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
 }
 table {
   border-collapse: collapse;
@@ -116,7 +115,7 @@ table {
 }
 
 td,th {
-  padding: 0;
+  padding: 0
 }
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -130,7 +129,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 1px dotted ButtonText
 }
 hr {
   box-sizing: content-box;
@@ -147,10 +146,10 @@ audio:not([controls]) {
   height: 0;
 }
 [aria-busy='true'] {
-  cursor: progress;
+  cursor: progress
 }
 
 
 [aria-controls] {
-  cursor: pointer;
+  cursor: pointer
 }
