@@ -181,5 +181,9 @@ audio:not([controls]){
   display:none;
   height:0;
 }
+[draggable] {
+    -webkit-user-drag: element;
+    -webkit-user-select: none;
+}
 [aria-busy='true']{cursor:progress}
 [aria-controls]{cursor:pointer}
