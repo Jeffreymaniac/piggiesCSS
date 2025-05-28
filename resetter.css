@@ -62,7 +62,7 @@ img{
   max-width:100%;
 }
 dfn,i,em{font-style:italic}
-b,strong{font-style:bolder}
+b,strong{font-weight:bolder}
 code,
 kbd,
 samp,
