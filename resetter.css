@@ -179,20 +179,22 @@ audio:not([controls]){
   display:none;
   height:0;
 }
-[draggable] {
-    cursor: move; /* fallback if grab cursor is unsupported */
+[draggable]:not([draggable="false"]) {
+    cursor: move; /* fallback */
     cursor: grab;
     cursor: -moz-grab;
     cursor: -webkit-grab;
     -webkit-user-drag: element;
-    user-drag:element;
+    user-drag: element;
     -webkit-user-select: none;
-    user-select:none;
+    user-select: none;
 }
-[draggable]:active {
+
+[draggable]:not([draggable="false"]):active {
     cursor: grabbing;
     cursor: -moz-grabbing;
     cursor: -webkit-grabbing;
 }
+
 [aria-busy='true']{cursor:progress}
 [aria-controls],summary{cursor:pointer}
